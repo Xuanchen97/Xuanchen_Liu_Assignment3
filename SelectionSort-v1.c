@@ -31,6 +31,7 @@ int main() {
             if (current > largestValue ) {
                 largestValue = current;
                 positionOfLargest = j;
+                printf("------- Doing a swap!\n");
             }
         }
         sortedArray[k] = largestValue;
@@ -42,10 +43,7 @@ int main() {
 
 
     // print the results
-    printf("Original Array after Fake delete: \n");
-    printArray(array);
-
-    printf("Array after sorting: \n");
+    printf("Sorted Array: \n");
     printArray(sortedArray);
     return 0;
 }
